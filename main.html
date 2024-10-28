@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tudor Mihaela</title>
+</head>
+<body onload="showAlert()">
+    <div class="wrapper">
+        <i class="icon fa fa-moon-o night" style="font-size: 36px" onclick="toggleMode()"></i>
+        <i class="icon fa fa-sun-o day" style="font-size: 36px" onclick="toggleMode()"></i>
+        <div id="mode-text">Night Mode</div>
+    </div>
+
+    <br><br><br>
+
+    <div id="clockdiv">
+        <div>
+            <span class="seconds" id="seconds">00</span>
+            <span class="milliseconds" id="milliseconds">000</span>
+            <span>Time</span>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="start" onclick="startTimer()">Start</button>
+        <button id="stop" onclick="stopTimer()">Stop</button>
+        <button id="restart" onclick="restartTimer()">Restart</button>
+    </div>
+
+    <div id="countdown">
+        <div>
+            <span id="countdown-seconds">60</span> Seconds
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
