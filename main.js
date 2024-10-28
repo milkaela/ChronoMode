@@ -96,12 +96,3 @@ function toggleTimer() {
     }
 }
 
-// function startCountdown() {
-//     countdownTimer = setInterval(function() {
-//         countdownSeconds--;
-//         document.getElementById('countdown-seconds').textContent = countdownSeconds;
-//         if (countdownSeconds <= 0) {
-//             clearInterval(countdownTimer);
-//         }
-//     }, 1000);
-// }
